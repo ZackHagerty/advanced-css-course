@@ -11,7 +11,6 @@
 
     //attribute selector based on some sort of filtering from HTML markup
     [class^="col-"]{
-        background-color: orangered;
         float: left; //height will be 0 so we need to apply clearfix
         
         &:not(:last-child){
