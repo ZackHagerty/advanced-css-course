@@ -37,7 +37,7 @@
         grid-column-gap: 1.5rem;
         align-items: center;
 
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         color: $color-grey-light-2;
 
         &::before,
