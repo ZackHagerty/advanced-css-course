@@ -49,9 +49,20 @@
         padding: 1.5rem 4rem;
 
         &::after{
-            background-color: white;
+            background-color: $color-white;
         }
     }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 1.5rem 4rem;
+
+        &::after{
+            background-color: $color-primary;
+        }
+    }
+
 
     &--animated{
         animation: moveInButton 1s ease-out 1s;
