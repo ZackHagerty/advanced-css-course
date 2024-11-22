@@ -1,3 +1,16 @@
+/*
+0-600 px: phone
+600 - 900px:  Tablet Portrait
+900 - 1200px: Tablet landscape
+[1200- 1800]: Normal
+1800px+:      Bigig screen
+
+$breakpoint argument choices:
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+*/
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -5,6 +18,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -466,7 +491,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%), scale(0);
-    transition: all .4s .2; }
+    transition: all .5s .2; }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
