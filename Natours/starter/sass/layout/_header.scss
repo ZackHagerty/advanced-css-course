@@ -7,8 +7,14 @@
     background-position: top;
     position: relative;
 
-    clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
-    -webkit-clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0,100% 0, 100% 80vh, 0 100%);
+    -webkit-clip-path: polygon(0 0,100% 0, 100% 80vh, 0 100%);
+
+    @include respond(tab-port){
+        height: 70vh;
+        clip-path: polygon(0 0,100% 0, 100% 65vh, 0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0, 100% 65vh, 0 100%);
+    }
 
     &__logo-box {
         position: absolute;
@@ -53,6 +59,13 @@
             animation-delay: 3s;  */
         
             animation: moveInLeft 1s ease-out;
+
+            @include respond(tab-land)
+            {   
+                margin: 2rem 0;
+                letter-spacing: 1rem;
+                font-size: 5rem;
+            }
         
         }
 
@@ -63,6 +76,11 @@
             letter-spacing: 1.5rem;
         
             animation: moveInRight 1s ease-out;
+
+            @include respond(phone)
+            {
+                letter-spacing: .5rem;
+            }
         }
     }
 }
